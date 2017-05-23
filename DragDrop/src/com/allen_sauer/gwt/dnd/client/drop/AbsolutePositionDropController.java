@@ -135,14 +135,17 @@ public class AbsolutePositionDropController extends AbstractPositioningDropContr
 
   @Override
   public void onMove(DragContext context) {
+     int scrollLeft = context.draggable.getParent().getElement() != null ? Math.round(context.draggable.getParent().getElement().getScrollLeft()) : 0;
+    int scrollTop = context.draggable.getParent().getElement() != null ? Math.round(context.draggable.getParent().getElement().getScrollTop()) : 0;
+ 
     super.onMove(context);
     for (Draggable draggable : draggableList) {
       draggable.desiredX = context.desiredDraggableX - dropTargetOffsetX + draggable.relativeX;
       draggable.desiredY = context.desiredDraggableY - dropTargetOffsetY + draggable.relativeY;
       draggable.desiredX = Math.max(0, Math.min(draggable.desiredX, dropTargetClientWidth
-          - draggable.offsetWidth));
+          - draggable.offsetWidth + scrollLeft));
       draggable.desiredY = Math.max(0, Math.min(draggable.desiredY, dropTargetClientHeight
-          - draggable.offsetHeight));
+          - draggable.offsetHeight + scrollTop));
       dropTarget.add(draggable.positioner, draggable.desiredX, draggable.desiredY);
     }
     if (context.dragController.getBehaviorScrollIntoView()) {
