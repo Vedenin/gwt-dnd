@@ -1,48 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.allen-sauer.gwt.dnd</groupId>
-  <artifactId>gwt-dnd</artifactId>
-  <version>@GWT_DND_VERSION@</version>
-  <packaging>jar</packaging>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <name>gwt-dnd</name>
-  <description>Library providing easy to use drag-and-drop capabilities to Google Web Toolkit (GWT) projects.</description>
-  <url>https://github.com/fredsa/gwt-dnd</url>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.vedenin</groupId>
+  <artifactId>gwt_dnd_root</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>GWT Dnd</name>
+  <description>Library providing easy to use mouse or touch based drag-and-drop capabilities to GWT</description>
+  <url>https://github.com/Vedenin/gwt-dnd</url>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
 
   <licenses>
     <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
     </license>
   </licenses>
+
   <scm>
-    <connection>scm:git:https://github.com/fredsa/gwt-dnd</connection>
-    <url>https://github.com/fredsa/gwt-dnd</url>
+    <url>https://github.com/Vedenin/gwt-dnd</url>
+    <connection>scm:hg:https://github.com/Vedenin/gwt-dnd</connection>
+    <developerConnection>scm:hg:https://github.com/Vedenin/gwt-dnd</developerConnection>
   </scm>
 
   <developers>
     <developer>
-      <id>fredsa</id>
-      <name>Fred Sauer</name>
-      <email>fredsa@gmail.com</email>
-      <url>google.com/profiles/fredsa</url>
-      <roles>
-        <role>developer</role>
-      </roles>
-      <timezone>-7</timezone>
-      <properties>
-        <picUrl>https://lh5.googleusercontent.com/-71i1rz1ATl8/AAAAAAAAAAI/AAAAAAABhHU/tyyCD9lBnig/photo.jpg</picUrl>
-      </properties>
+      <id>owner</id>
+      <name>Viacheslav Vedenin</name>
+      <email>vedenin1980@gmail.com</email>
+      <timezone>UTC+1</timezone>
     </developer>
   </developers>
+  <properties>
+    <!-- Convenience property to set the GWT version -->
+    <gwt.version>2.8.2</gwt.version>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-user</artifactId>
-      <version>2.6.0</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+    <!-- GWT 2.8 requires 1.8 -->
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+    <module>core</module>
+    <module>demo</module>
+    <module>examples</module>
+      <module>tests</module>
+  </modules>
 </project>
