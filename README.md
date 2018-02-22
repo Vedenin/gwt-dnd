@@ -22,7 +22,7 @@ You can find artifacts to [Maven central](https://search.maven.org/#artifactdeta
 To you dependency in Maven (or the same dependency to gradle, ivi and so on, of just download [jar file (gwt_dnd-1.0.jar)](https://repo1.maven.org/maven2/com/github/vedenin/gwt_dnd/1.0/)) and add to your project.
 
 # Working examples #
-Try the [working demo](https://gwt-dnd-demo.herokuapp.com/#InsertPanelExample):
+Try the [working demo](https://gwtdnd.herokuapp.com/#InsertPanelExample)
 
 # Getting started with your own drag-and-drop projects #
 Read the wiki here: https://github.com/fredsa/gwt-dnd/wiki/GettingStarted
