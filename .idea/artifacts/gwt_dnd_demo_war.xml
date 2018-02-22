@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gwt_dnd_demo:war">
+    <output-path>$PROJECT_DIR$/demo/target</output-path>
+    <root id="archive" name="gwt_dnd_demo-1.0.war">
+      <element id="artifact" artifact-name="gwt_dnd_demo:war exploded" />
+    </root>
+  </artifact>
+</component>

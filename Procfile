@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar DragDrop/demo/target/dependency/jetty-runner.jar --port $PORT DragDrop/demo/target/*.war
+web: java $JAVA_OPTS -jar demo/target/dependency/jetty-runner.jar --port $PORT demo/target/*.war

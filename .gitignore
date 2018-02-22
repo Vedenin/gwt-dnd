@@ -1,19 +1,13 @@
-#Sublime
-gwt-dnd.sublime-workspace
+# Ant build
+/build/
 
-# GWT Cache
-gwt-unitCache/
+# App Engine
+/war/WEB-INF/appengine-generated/
+/war/WEB-INF/deploy/
+/war/WEB-INF/classes/
 
-# App Engine SDK
-appengine-api-1.0-sdk-*.jar
-appengine-api-labs.jar
-appengine-endpoints.jar
-appengine-jsr107cache-*.jar
-gwt-servlet.jar
-jsr107cache-1.1.jar
-
-# GWT SDK
-gwt-servlet.jar
-
-# OS-X
-.DS_Store
+# Compiled output
+/war/demo/
+/war/test/
+/war/gettingstarted1/
+/war/gettingstarted2/
