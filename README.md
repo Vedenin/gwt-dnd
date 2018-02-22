@@ -1,24 +1,31 @@
-![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+This project is fork of [this project](https://github.com/fredsa/gwt-dnd), that is not actively developed or maintained. In this project are fixed some bug, use the latest GWT version (2.8.2) and new maven build system. And this project will be actively developed and maintained. 
 
-This project is no longer actively developed or maintained.
 # Summary #
 Library providing easy to use mouse or touch (for mobile devices) based drag-and-drop capabilities to [Google Web Toolkit](http://www.gwtproject.org/) (GWT) projects.
 
-# Questions? #
-If you have questions, please post them on http://groups.google.com/group/gwt-dnd and I (or someone else) will try to answer them as best as possible. Using the forum means that others can benefit from any answers and feedback you get. It is always the fastest way to get an answer to a new question.
+# Download #
+You can find artifacts to [Maven central](https://search.maven.org/#artifactdetails%7Ccom.github.vedenin%7Cgwt_dnd%7C1.0%7Cjar), just add 
 
-# Is your project using drag and drop? #
-I'd like to know if you're using gwt-dnd on your project, and how useful (or not) this library is to you. You can send me an email at [fredsa@gmail.com](mailto:fredsa@gmail.com?subject=gwt-dnd).
+    <dependency>
+      <groupId>com.github.vedenin</groupId>
+      <artifactId>gwt_dnd</artifactId>
+      <version>1.0</version>
+      <classifier>sources</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.vedenin</groupId>
+      <artifactId>gwt_dnd</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+To you dependency in Maven (or the same dependency to gradle, ivi and so on, of just download [jar file (gwt_dnd-1.0.jar)](https://repo1.maven.org/maven2/com/github/vedenin/gwt_dnd/1.0/)) and add to your project.
+
+# Working examples #
+Try the [working demo](https://gwt-dnd-demo.herokuapp.com/#InsertPanelExample):
 
 # Getting started with your own drag-and-drop projects #
 Read the wiki here: https://github.com/fredsa/gwt-dnd/wiki/GettingStarted
-
-
-# Working examples #
-Try the [working demo](https://gwt-dnd.appspot.com/):
-
-[![](https://gwt-dnd.storage.googleapis.com/gwt-dragdrop-screenshot-1.2.gif)](https://gwt-dnd.appspot.com/)
-
 
 # Features #
   * **Drag-and-Drop** - classic drag/drop operations for your existing widgets and panels
@@ -52,11 +59,3 @@ Try the [working demo](https://gwt-dnd.appspot.com/):
 
 # Feedback #
 Please let me know what you think. Suggestions are always welcome.
-
-
-# Other GWT projects by the same author #
-
-| **Project** | **Description** |
-|:------------|:----------------|
-| [gwt-voices](https://github.com/fredsa/gwt-voices/) | Provides sound support for your GWT applications. |
-| [gwt-log](https://github.com/fredsa/gwt-log/) | Provides logging support for your GWT applications. |
